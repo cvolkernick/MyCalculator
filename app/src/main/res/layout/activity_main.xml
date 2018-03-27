@@ -11,7 +11,7 @@
         android:id="@+id/tvResultDisplay"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:textSize="30sp"
+        android:textSize="@dimen/textSize"
         android:gravity="right"/>
 
     <TextView
@@ -44,33 +44,15 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1" />
         <Button
+            android:id="@+id/btnSeven"
+            android:text="7"
+            android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1" />
         <Button
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
-        <Button
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
-        <Button
+            android:id="@+id/btnEight"
+            android:text="8"
+            android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1" />
         <Button
@@ -80,8 +62,45 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1" />
         <Button
-            android:id="@+id/btnEquals"
-            android:text="="
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/btnFour"
+            android:text="4"
+            android:textSize="@dimen/textSize"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:id="@+id/btnFive"
+            android:text="5"
+            android:textSize="@dimen/textSize"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:id="@+id/btnSix"
+            android:text="6"
+            android:textSize="@dimen/textSize"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:id="@+id/btnOne"
+            android:text="1"
+            android:textSize="@dimen/textSize"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:id="@+id/btnTwo"
+            android:text="2"
+            android:textSize="@dimen/textSize"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:id="@+id/btnThree"
+            android:text="3"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1" />
@@ -95,6 +114,12 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1" />
         <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:id="@+id/btnEquals"
+            android:text="="
+            android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1" />
     </GridLayout>
