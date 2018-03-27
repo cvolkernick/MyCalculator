@@ -8,33 +8,94 @@
     tools:context="com.example.admin.mycalculator.MainActivity" >
 
     <TextView
-        android:id="@+id/display"
+        android:id="@+id/tvResultDisplay"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:hint="0" />
+        android:layout_height="40dp"
+        android:textSize="30sp"
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/tvInputDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="@string/displayDefault"
+        android:gravity="right"
+        android:textSize="50sp"
+        android:padding="5dp"
+        android:layout_below="@id/tvResultDisplay"/>
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:rowCount="4"
+        android:layout_height="match_parent"
+        android:rowCount="5"
         android:columnCount="4"
-        android:layout_below="@id/display">
+        android:layout_below="@id/tvInputDisplay">
 
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:id="@+id/btnNine"
+            android:text="9"
+            android:textSize="@dimen/textSize"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:id="@+id/btnEquals"
+            android:text="="
+            android:textSize="@dimen/textSize"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1" />
     </GridLayout>
 </RelativeLayout>
