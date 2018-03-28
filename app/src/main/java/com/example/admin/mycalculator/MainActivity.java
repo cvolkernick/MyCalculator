@@ -1,5 +1,6 @@
 package com.example.admin.mycalculator;
 
+import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -141,9 +142,28 @@ public class MainActivity extends AppCompatActivity {
 
         inputDisplay = findViewById(R.id.tvInputDisplay);
         resultDisplay = findViewById(R.id.tvResultDisplay);
-        resultValue = currentValue;
-        currentValue = "";
-        currentOperation = "add";
+
+        if (currentValue != "" & resultValue != "") {
+            switch (currentOperation) {
+                case "add":
+                    double result = Math.add(Double.parseDouble(currentValue), Double.parseDouble(resultValue));
+
+                    if (Math.isWhole(result)) {
+                        resultValue = (int)result + "";
+                    }
+                    else {
+                        resultValue = result + "";
+                    }
+
+                    currentValue = "";
+                    currentOperation = "add";
+            }
+        }
+        else {
+            resultValue = currentValue;
+            currentValue = "";
+            currentOperation = "add";
+        }
 
         inputDisplay.setText(currentValue);
         resultDisplay.setText(resultValue);
@@ -196,6 +216,17 @@ public class MainActivity extends AppCompatActivity {
                     resultDisplay.setText(resultValue);
                     inputDisplay.setText(currentValue);
             }
+        }
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            Toast.makeText(this, "landscape", Toast.LENGTH_LONG).show();
+
+
         }
     }
 }
