@@ -37,109 +37,143 @@
             android:textSize="@dimen/textSize"
             android:textColor="@color/colorHighlight"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
-        <Button
+            android:layout_rowWeight="1"
+            android:onClick="onClear" />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:src="@drawable/delete"
+
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:scaleType="center"
+            android:onClick="onDelete" />
         <Button
             android:id="@+id/btnPercent"
             android:text="%"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onPercent" />
         <Button
             android:id="@+id/btnDivide"
             android:text="/"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onDivide" />
         <Button
             android:id="@+id/btnSeven"
             android:text="7"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onSeven" />
         <Button
             android:id="@+id/btnEight"
             android:text="8"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onEight" />
         <Button
             android:id="@+id/btnNine"
             android:text="9"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onNine" />
         <Button
             android:id="@+id/btnMultiply"
             android:text="X"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onMultiply" />
 
         <Button
             android:id="@+id/btnFour"
             android:text="4"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onFour" />
         <Button
             android:id="@+id/btnFive"
             android:text="5"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onFive" />
         <Button
             android:id="@+id/btnSix"
             android:text="6"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onSix" />
         <Button
             android:id="@+id/btnMinus"
             android:text="-"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onMinus" />
         <Button
             android:id="@+id/btnOne"
             android:text="1"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onOne" />
         <Button
             android:id="@+id/btnTwo"
             android:text="2"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onTwo" />
         <Button
             android:id="@+id/btnThree"
             android:text="3"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onThree" />
         <Button
             android:id="@+id/btnPlus"
             android:text="+"
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onPlus" />
         <Button
+            android:id="@+id/btnNegPos"
+            android:text="+/-"
+            android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onNegPos" />
         <Button
+            android:id="@+id/btnZero"
+            android:text="0"
+            android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onZero" />
         <Button
+            android:id="@+id/btnDecimal"
+            android:text="."
+            android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onDecimal" />
         <Button
             android:id="@+id/btnEquals"
             android:text="="
             android:textSize="@dimen/textSize"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1" />
+            android:layout_rowWeight="1"
+            android:onClick="onEquals" />
     </GridLayout>
 </RelativeLayout>
